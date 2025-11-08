@@ -1,4 +1,4 @@
-# Gemini Image App (simple demo)
+WriteWaveAI (simple demo)
 
 ## Quickstart (local)
 1. Copy example env:

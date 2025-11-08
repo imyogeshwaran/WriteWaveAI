@@ -1,0 +1,75 @@
+<!-- frontend/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gemini Image Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<section class="cd-position-relative cd-z-index-1">
+  <div class="cd-position-relative cd-z-index-2">
+    <main class="app">
+    <header class="hero">
+      <h1 class="title">WriteWave</h1>
+      <p class="subtitle">an AI tool that turns your ideas into words instantly</p>
+    </header>
+
+    <section class="panel">
+      <form id="promptForm" class="prompt-form" autocomplete="off">
+        <input type="text" id="promptInput" placeholder="Enter the prompt">
+        <div class="controls">
+          <button id="generateBtn" class="btn">Generate</button>
+        </div>
+      </form>
+
+      <div id="result" class="result hidden">
+<div id="placeholder" class="placeholder"></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>Built with ❤️ by WriteWave. Use responsibly. Texts may include AI-generated content per provider rules.</small>
+    </footer>
+  </main>
+  </div>
+  <figure class="bg-decoration cd-z-index-1" aria-hidden="true">
+    <svg class="bg-decoration__svg" viewBox="0 0 1920 450" fill="none">
+      <rect opacity="0.5" x="1410.61" y="42.6123" width="246.643" height="304.604"
+        transform="rotate(-45 1410.61 42.6123)" fill="url(#bg-decoration-v1-fx-1-linear-1)" />
+      <rect opacity="0.5" x="1176" y="-20.5969" width="246.643" height="304.604" transform="rotate(-45 1176 -20.5969)"
+        fill="url(#bg-decoration-v1-fx-1-linear-2)" />
+      <circle opacity="0.5" cx="1572" cy="205" r="46" fill="url(#bg-decoration-v1-fx-1-radial-1)" />
+      <g opacity="0.5" filter="url(#bg-decoration-v1-fx-1-blur-1)">
+        <circle cx="1680" cy="324" r="26" fill="var(--bg-decoration-color-3)" />
+      </g>
+      <defs>
+        <filter id="bg-decoration-v1-fx-1-blur-1" x="1644" y="288" width="72" height="72" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur" />
+        </filter>
+        <linearGradient id="bg-decoration-v1-fx-1-linear-1" x1="1533.93" y1="42.6123" x2="1533.93" y2="347.217"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="var(--bg-decoration-color-1)" />
+          <stop offset="1" stop-color="var(--bg-decoration-color-1)" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="bg-decoration-v1-fx-1-linear-2" x1="1299.32" y1="-20.5969" x2="1299.32" y2="284.007"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="var(--bg-decoration-color-1)" />
+          <stop offset="1" stop-color="var(--bg-decoration-color-1)" stop-opacity="0" />
+        </linearGradient>
+        <radialGradient id="bg-decoration-v1-fx-1-radial-1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(1572 205) rotate(90) scale(46)">
+          <stop stop-color="var(--bg-decoration-color-3)" stop-opacity="0" />
+          <stop offset="1" stop-color="var(--bg-decoration-color-3)" />
+        </radialGradient>
+      </defs>
+    </svg>
+  </figure>
+</section>
+  <script src="app.js"></script>
+</body>
+</html>
